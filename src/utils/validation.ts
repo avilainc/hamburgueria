@@ -1,4 +1,4 @@
-import { ContactFormData, FormErrors } from '@types/index';
+import type { ContactFormData, FormErrors } from '../types';
 
 export const validateEmail = (email: string): boolean => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

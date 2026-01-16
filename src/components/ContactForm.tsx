@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { ContactFormData, FormErrors } from '../types';
-import { validateForm, formatPhone } from '../utils/validation';
+import { validateForm } from '../utils/validation';
 import Button from './Button';
 import './ContactForm.css';
 
