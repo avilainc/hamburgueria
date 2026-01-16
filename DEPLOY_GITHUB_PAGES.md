@@ -5,7 +5,7 @@
 O projeto já está configurado para deploy no GitHub Pages! As seguintes configurações foram aplicadas:
 
 ### 1. package.json
-- ✅ Adicionado `homepage`: "https://avilainc.github.io/hamburgueria"
+- ✅ Adicionado `homepage`: "https://avilaops.github.io/hamburgueria"
 - ✅ Adicionado script `predeploy`
 - ✅ Adicionado script `deploy`
 - ✅ Adicionado dependência `gh-pages`
