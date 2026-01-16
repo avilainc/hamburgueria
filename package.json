@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://avilaops.github.io/hamburgueria",
+  "homepage": "https://hamburgueria.grdcompany.com.br",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
