@@ -25,10 +25,6 @@ export const validateForm = (data: ContactFormData): FormErrors => {
     errors.phone = 'Telefone inválido';
   }
 
-  if (!data.businessType) {
-    errors.businessType = 'Selecione o tipo de negócio';
-  }
-
   return errors;
 };
 

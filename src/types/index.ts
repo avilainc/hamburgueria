@@ -12,18 +12,6 @@ export interface Feature {
   icon?: string;
 }
 
-export interface LandingSection {
-  id: string;
-  type: 'fastfood' | 'hamburguer-pizzaria' | 'restaurante';
-  headline: string;
-  subtitle: string;
-  benefits: Benefit[];
-  features?: Feature[];
-  socialProof: string;
-  ctaText: string;
-  ctaLink: string;
-}
-
 export interface NavigationItem {
   id: string;
   label: string;
@@ -35,7 +23,6 @@ export interface ContactFormData {
   name: string;
   email: string;
   phone: string;
-  businessType: 'fastfood' | 'hamburguer-pizzaria' | 'restaurante' | 'outro';
   message?: string;
 }
 

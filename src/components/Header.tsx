@@ -30,8 +30,8 @@ const Header: React.FC = () => {
         <div className="header__content">
           <div className="header__logo">
             <a href="#home" onClick={() => handleNavClick('#home')}>
-              <span className="header__logo-icon">🐦</span>
-              <span className="header__logo-text">Colibri</span>
+              <span className="header__logo-icon">🍔</span>
+              <span className="header__logo-text">Hamburgueria Colibri</span>
             </a>
           </div>
 

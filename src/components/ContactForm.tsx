@@ -9,7 +9,6 @@ const ContactForm: React.FC = () => {
     name: '',
     email: '',
     phone: '',
-    businessType: 'fastfood',
     message: '',
   });
 
@@ -59,7 +58,6 @@ const ContactForm: React.FC = () => {
         name: '',
         email: '',
         phone: '',
-        businessType: 'fastfood',
         message: '',
       });
       setIsSubmitted(false);
@@ -127,25 +125,6 @@ const ContactForm: React.FC = () => {
       </div>
 
       <div className="contact-form__group">
-        <label htmlFor="businessType" className="contact-form__label">
-          Tipo de negócio *
-        </label>
-        <select
-          id="businessType"
-          name="businessType"
-          value={formData.businessType}
-          onChange={handleChange}
-          className={`contact-form__select ${errors.businessType ? 'contact-form__select--error' : ''}`}
-        >
-          <option value="fastfood">Fast Food</option>
-          <option value="hamburguer-pizzaria">Hamburgueria / Pizzaria</option>
-          <option value="restaurante">Restaurante</option>
-          <option value="outro">Outro</option>
-        </select>
-        {errors.businessType && <span className="contact-form__error">{errors.businessType}</span>}
-      </div>
-
-      <div className="contact-form__group">
         <label htmlFor="message" className="contact-form__label">
           Mensagem (opcional)
         </label>
@@ -155,7 +134,7 @@ const ContactForm: React.FC = () => {
           value={formData.message}
           onChange={handleChange}
           className="contact-form__textarea"
-          placeholder="Conte-nos mais sobre seu negócio..."
+          placeholder="Digite sua mensagem..."
           rows={4}
         />
       </div>
@@ -167,7 +146,7 @@ const ContactForm: React.FC = () => {
         fullWidth
         disabled={isSubmitting}
       >
-        {isSubmitting ? 'Enviando...' : 'Quero conhecer o Colibri!'}
+        {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
       </Button>
     </form>
   );

@@ -1,9 +1,11 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import LandingSectionComponent from '../components/LandingSection';
+import MenuSection from '../components/MenuSection';
+import AboutSection from '../components/AboutSection';
+import TestimonialsSection from '../components/TestimonialsSection';
+import LocationSection from '../components/LocationSection';
 import ContactForm from '../components/ContactForm';
-import { landingSections } from '../utils/data';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -16,25 +18,26 @@ const Home: React.FC = () => {
           <div className="container">
             <div className="home__hero-content">
               <h1 className="home__hero-title animate-fadeInDown">
-                Transforme seu negócio com <span className="highlight">Colibri</span>
+                Os Melhores Hambúrgueres da Cidade
               </h1>
               <p className="home__hero-subtitle animate-fadeInUp">
-                A solução completa para Fast Food, Hamburguerias, Pizzarias e Restaurantes
+                Ingredientes frescos, sabor incomparável e atendimento excepcional. Venha nos visitar!
               </p>
               <div className="home__hero-features animate-fadeIn">
                 <div className="home__hero-feature">
-                  <span className="home__hero-feature-icon">🚀</span>
-                  <span>Atendimento rápido</span>
+                  <span className="home__hero-feature-icon">🍔</span>
+                  <span>Hambúrgueres Artesanais</span>
                 </div>
                 <div className="home__hero-feature">
-                  <span className="home__hero-feature-icon">📊</span>
-                  <span>Gestão completa</span>
+                  <span className="home__hero-feature-icon">🥤</span>
+                  <span>Refrigerantes Gelados</span>
                 </div>
                 <div className="home__hero-feature">
-                  <span className="home__hero-feature-icon">💰</span>
-                  <span>Mais lucro</span>
+                  <span className="home__hero-feature-icon">🚚</span>
+                  <span>Delivery Rápido</span>
                 </div>
               </div>
+              <a href="#menu" className="home__hero-cta">Ver Menu</a>
             </div>
           </div>
           <div className="home__hero-background">
@@ -44,18 +47,19 @@ const Home: React.FC = () => {
           </div>
         </section>
 
-        {landingSections.map((section, index) => (
-          <LandingSectionComponent key={section.id} section={section} index={index} />
-        ))}
+        <MenuSection />
+        <AboutSection />
+        <TestimonialsSection />
+        <LocationSection />
 
         <section id="contato" className="home__contact">
           <div className="container">
             <div className="home__contact-header">
               <h2 className="home__contact-title">
-                Pronto para revolucionar seu negócio?
+                Entre em Contato
               </h2>
               <p className="home__contact-subtitle">
-                Preencha o formulário abaixo e nossa equipe entrará em contato com você
+                Tem alguma dúvida ou quer fazer um pedido? Fale conosco!
               </p>
             </div>
             <ContactForm />

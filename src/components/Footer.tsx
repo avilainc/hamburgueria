@@ -10,12 +10,11 @@ const Footer: React.FC = () => {
         <div className="footer__content">
           <div className="footer__section footer__section--brand">
             <div className="footer__logo">
-              <span className="footer__logo-icon">🐦</span>
-              <span className="footer__logo-text">Colibri</span>
+              <span className="footer__logo-icon">🍔</span>
+              <span className="footer__logo-text">Hamburgueria Colibri</span>
             </div>
             <p className="footer__description">
-              O sistema completo que faz seu fast food, hamburgueria, pizzaria ou restaurante
-              voar no atendimento e na gestão.
+              Os melhores hambúrgueres da cidade, feitos com ingredientes frescos e muito amor.
             </p>
             <div className="footer__social">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -34,32 +33,22 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="footer__section">
-            <h3 className="footer__title">Soluções</h3>
+            <h3 className="footer__title">Menu</h3>
             <ul className="footer__links">
-              <li><a href="#fastfood">Fast Food</a></li>
-              <li><a href="#hamburguer-pizzaria">Hamburguerias</a></li>
-              <li><a href="#hamburguer-pizzaria">Pizzarias</a></li>
-              <li><a href="#restaurante">Restaurantes</a></li>
+              <li><a href="#menu">Hambúrgueres</a></li>
+              <li><a href="#menu">Acompanhamentos</a></li>
+              <li><a href="#menu">Bebidas</a></li>
+              <li><a href="#menu">Promoções</a></li>
             </ul>
           </div>
 
           <div className="footer__section">
-            <h3 className="footer__title">Recursos</h3>
+            <h3 className="footer__title">Sobre</h3>
             <ul className="footer__links">
-              <li><a href="#funcionalidades">Funcionalidades</a></li>
-              <li><a href="#integrações">Integrações</a></li>
-              <li><a href="#preços">Preços</a></li>
-              <li><a href="#suporte">Suporte</a></li>
-            </ul>
-          </div>
-
-          <div className="footer__section">
-            <h3 className="footer__title">Empresa</h3>
-            <ul className="footer__links">
-              <li><a href="#sobre">Sobre Nós</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#casos">Casos de Sucesso</a></li>
+              <li><a href="#sobre">Nossa História</a></li>
+              <li><a href="#localizacao">Localização</a></li>
               <li><a href="#contato">Contato</a></li>
+              <li><a href="#depoimentos">Depoimentos</a></li>
             </ul>
           </div>
 
@@ -68,7 +57,7 @@ const Footer: React.FC = () => {
             <ul className="footer__contact">
               <li>
                 <span className="footer__contact-icon">📧</span>
-                <a href="mailto:contato@colibri.com.br">contato@colibri.com.br</a>
+                <a href="mailto:contato@hamburgueriacolibri.com.br">contato@hamburgueriacolibri.com.br</a>
               </li>
               <li>
                 <span className="footer__contact-icon">📞</span>
@@ -76,7 +65,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <span className="footer__contact-icon">📍</span>
-                <span>São Paulo, SP - Brasil</span>
+                <span>Rua das Flores, 123 - Centro</span>
               </li>
             </ul>
           </div>
@@ -84,7 +73,7 @@ const Footer: React.FC = () => {
 
         <div className="footer__bottom">
           <p className="footer__copyright">
-            © {currentYear} Colibri. Todos os direitos reservados.
+            © {currentYear} Hamburgueria Colibri. Todos os direitos reservados.
           </p>
           <div className="footer__legal">
             <a href="#privacidade">Política de Privacidade</a>
